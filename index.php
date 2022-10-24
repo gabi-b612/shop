@@ -80,15 +80,15 @@
             <?php  foreach ($product as $oneproduct): ?>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title><?= $oneproduct -> nom ?></title><rect width="100%" height="100%" fill="#55595c"/> <img src="<?php $oneproduct -> image  ?>" </svg>
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title><?php $oneproduct -> nom ?></title><rect width="100%" height="100%" fill="#55595c"/> <img src="<?php $oneproduct -> image  ?>" </svg>
 
                         <div class="card-body">
-                            <p class="card-text"><? $oneproduct -> desc ?></p>
+                            <p class="card-text"><?php $oneproduct -> description ?></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Afficher</button>
                                 </div>
-                                <small class="text-muted"><? $oneproduct -> prix ?></small>
+                                <small class="text-muted"><?php $oneproduct -> prix ?></small>
                             </div>
                         </div>
                     </div>
